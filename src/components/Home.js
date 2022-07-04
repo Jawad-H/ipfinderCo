@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react'
+import { React, useState } from 'react'
 import styled from "styled-components";
 import { BiWorld } from "react-icons/bi";
 import { FaCity, FaSearchLocation } from "react-icons/fa";
