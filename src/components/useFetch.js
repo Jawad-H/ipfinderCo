@@ -3,7 +3,6 @@ import ipRegex from 'ip-regex';
 import axios from "axios";
 
 function useFetch(url, input) {
-    // const [input, setInput] = useState('');
     const [datas, setData] = useState([]);
     const [error, setError] = useState(false);
 
