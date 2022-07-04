@@ -154,7 +154,4 @@ h5{
 }
 `;
 
-
-
-
 export default Home
