@@ -4,36 +4,14 @@ import { BiWorld } from "react-icons/bi";
 import { FaCity, FaSearchLocation } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb"
 import { GiWorld } from "react-icons/gi";
-import axios from "axios";
 import { GrOrganization, GrCurrency } from "react-icons/gr";
 import { BsFillPeopleFill } from "react-icons/bs";
-import ipRegex from 'ip-regex';
 import useFetch from "./useFetch";
 import { FaMapMarkerAlt } from "react-icons/fa";
 function Home() {
 
     const [input, setInput] = useState('');
     const [datas, error] = useFetch(`https://ipapi.co/${input}/json/`, input);
-    // const [datas, setData] = useState([]);
-    // const [error, setError] = useState(false);
-
-    // const fetchUrl = async (url) => {
-    //     const response = await axios.get(url);
-    //     if (response.status && response.data.error) {
-    //         setError(true);
-    //     }
-    //     else {
-    //         setError(false);
-    //         setData(response.data)
-    //     }
-    // }
-    // useEffect(() => {
-    //     setData([]);
-    //     if (ipRegex().test(input)) {
-    //         fetchUrl(`https://ipapi.co/${input}/json/`);
-    //     }
-    //     return
-    // }, [input])
 
     return (
         <Wrapper>
